@@ -1,0 +1,8 @@
+@for $i from 1 through 3 {
+  .star#{$i} {
+    position: absolute;
+    width: #{$i}px;
+    height: #{$i}px;
+    background-color: #fff;
+  }
+}
