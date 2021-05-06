@@ -21,7 +21,7 @@ class MainMenu extends React.Component {
   constructor(props: any) {
     super(props);
     for (let i = 0; i < this.starsCount; i++) {
-      this.stars.push(<Star />);
+      this.stars.push(<Star viewTop={0} />);
     }
 
     this.play = this.play.bind(this);
@@ -29,6 +29,12 @@ class MainMenu extends React.Component {
   }
 
   play() {
+    ReactDOM.render(
+      <React.StrictMode>
+        <Game/>
+      </React.StrictMode>
+      , document.getElementById('root')
+    );
   }
 
   exit() {

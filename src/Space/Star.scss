@@ -4,5 +4,10 @@
     width: #{$i}px;
     height: #{$i}px;
     background-color: #fff;
+
+    .foreground & {
+      width: #{$i * 2}px;
+      height: #{$i * 2}px;
+    }
   }
 }
